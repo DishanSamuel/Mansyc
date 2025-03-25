@@ -17,12 +17,12 @@ In the future, **Golang** integration may be added to enhance performance and us
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/sysStart-quit.git
-   cd sysStart-quit
+   git clone https://github.com/yourusername/sysStart-Quit.git
+   cd sysStart-Quit
    ```
 2. Make the script executable:
    ```bash
-   chmod +x sysStart-quit.sh
+   chmod +x sysStart-Quit.sh
    ```
 
 ## Usage
