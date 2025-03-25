@@ -29,11 +29,12 @@ In the future, **Golang** integration may be added to enhance performance and us
 ## Usage
 
 1. setting up the text file listing startup & essential services required:<br>
-   THERE ARE TWO .txt FILES => normalser.txt (used in quiting services) 
-                            => startup.txt   (used in starting services)
+   THERE ARE TWO .txt FILES <br>
+   => normalser.txt (used in quiting services) <br>
+   => startup.txt   (used in starting services) <br>
 
-   (i)   normalser.txt --> contains essinatial services for the linux system to operate
-   (ii)  startup.txt   --> contains the services to be started during running the seript
+   (i)   normalser.txt --> contains essinatial services for the linux system to operate <br>
+   (ii)  startup.txt   --> contains the services to be started during running the seript <br>
    
    These two files can be costimized according to user needs
 
