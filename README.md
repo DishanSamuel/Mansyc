@@ -28,7 +28,7 @@ In the future, **Golang** integration may be added to enhance performance and us
 
 ## Usage
 
-1. setting up the text file listing startup & essential services required:
+1. setting up the text file listing startup & essential services required:<br>
    THERE ARE TWO .txt FILES => normalser.txt (used in quiting services) 
                             => startup.txt   (used in starting services)
 
