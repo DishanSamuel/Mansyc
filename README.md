@@ -35,8 +35,8 @@ In the future, **Golang** integration may be added to enhance performance and us
    => normalser.txt (used in quiting services) <br>
    => startup.txt   (used in starting services) <br>
 
-   (i)   normalser.txt --> contains essinatial services for the linux system to operate <br>
-   (ii)  startup.txt   --> contains the services to be started during running the seript <br>
+   (i)   **normalser.txt** --> contains essinatial services for the linux system to operate <br>
+   (ii)  **startup.txt**   --> contains the services to be started during running the seript <br>
    
    These two files can be costimized according to user needs
 
@@ -79,7 +79,7 @@ In the future, **Golang** integration may be added to enhance performance and us
    ```
    ![image](https://github.com/user-attachments/assets/93b3a44c-5e2e-463f-a976-e8d0897e33ab)
 
-   PRESS "1" --> to start services
+   PRESS "1" --> to start services <br>
    PRESS "2" --> end services
 
 
