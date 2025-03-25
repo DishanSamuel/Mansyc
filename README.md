@@ -20,33 +20,72 @@ In the future, **Golang** integration may be added to enhance performance and us
    git clone https://github.com/DishanSamuel/sysStart-Quit.git
    cd sysStart-Quit
    ```
-2. Make the script executable:
+2. Make the script executable & install requirements:
    ```bash
-   chmod +x sysStart-Quit.sh
+   chmod +x ./config.sh
+   ./config.sh
    ```
 
 ## Usage
 
-1. Create a text file (e.g., `services.txt`) listing essential services:
+1. setting up the text file listing startup & essential services required:
+   THERE ARE TWO .txt FILES => normalser.txt (used in quiting services) 
+                            => startup.txt   (used in starting services)
+
+   (i)   normalser.txt --> contains essinatial services for the linux system to operate
+   (ii)  startup.txt   --> contains the services to be started during running the seript
+   
+   These two files can be costimized according to user needs
+
+   !! DISCLAIMER !! ( normalser.txt may wary from system to system, please review the file before running it)
+
+   TO KNOW THE DEFAULT SERVICE IN THE SYSTEM YOU CAN RUN THE FORLLOWING COMMAND
    ```
-   sshd
-   cron
-   apache2
+   systemctl list-units --type=service --state=running
    ```
-2. Run the script to **start** essential services:
+
+   DEFAULTS ARE 
+   ```
+   accounts-daemon.service
+   colord.service
+   cron.service
+   dbus.service
+   fwupd.service
+   gdm.service
+   haveged.service
+   ModemManager.service
+   NetworkManager.service
+   polkit.service
+   power-profiles-daemon.service
+   rtkit-daemon.service
+   systemd-journald.service
+   systemd-logind.service
+   systemd-timesyncd.service
+   systemd-udevd.service
+   udisks2.service
+   upower.service
+   user@1000.service
+   wpa_supplicant.service
+   bolt.service
+   bluetooth.service
+   ```
+   
+3. Run the script to **start** essential services:
    ```bash
-   ./sysStart-quit.sh --start services.txt
+   ./run_main.sh
    ```
-3. Run the script to **stop all unnecessary services**:
-   ```bash
-   ./sysStart-quit.sh --stop services.txt
-   ```
+   ![image](https://github.com/user-attachments/assets/93b3a44c-5e2e-463f-a976-e8d0897e33ab)
+
+   PRESS "1" --> to start services
+   PRESS "2" --> end services
+
+
 
 ## Dependencies
 
 - Linux-based system
 - `systemctl` (for managing systemd services)
-- `grep`, `awk`, `ps` (for process management)
+- `grep`, `awk`, `sed`(for process management)
 
 ## Future Improvements
 
