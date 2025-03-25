@@ -17,7 +17,7 @@ In the future, **Golang** integration may be added to enhance performance and us
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/sysStart-Quit.git
+   git clone https://github.com/DishanSamuel/sysStart-Quit.git
    cd sysStart-Quit
    ```
 2. Make the script executable:
