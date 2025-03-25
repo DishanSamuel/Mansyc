@@ -42,10 +42,13 @@ In the future, **Golang** integration may be added to enhance performance and us
 
    !! DISCLAIMER !! ( normalser.txt may wary from system to system, please review the file before running it)
 
+   
+
    TO KNOW THE DEFAULT SERVICE IN THE SYSTEM YOU CAN RUN THE FOLLOWING COMMAND
    ```
    systemctl list-units --type=service --state=running
    ```
+
 
    DEFAULTS ARE 
    ```
@@ -72,8 +75,11 @@ In the future, **Golang** integration may be added to enhance performance and us
    bolt.service
    bluetooth.service
    ```
+
+
    
-**3. Run the script to start & end essential services:**
+**2. Run the script to start & end essential services:**
+
    ```bash
    ./run_main.sh
    ```
@@ -89,12 +95,14 @@ In the future, **Golang** integration may be added to enhance performance and us
 - Linux-based system
 - `systemctl` (for managing systemd services)
 - `grep`, `awk`, `sed`(for process management)
+  
 
 ## Future Improvements
 
 - Golang integration for better performance and cross-platform compatibility.
 - GUI or CLI enhancements for easier usage.
 - Logging functionality to track service management actions.
+
 
 ## Contributing
 
