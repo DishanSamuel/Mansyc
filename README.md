@@ -40,7 +40,7 @@ In the future, **Golang** integration may be added to enhance performance and us
 
    !! DISCLAIMER !! ( normalser.txt may wary from system to system, please review the file before running it)
 
-   TO KNOW THE DEFAULT SERVICE IN THE SYSTEM YOU CAN RUN THE FORLLOWING COMMAND
+   TO KNOW THE DEFAULT SERVICE IN THE SYSTEM YOU CAN RUN THE FOLLOWING COMMAND
    ```
    systemctl list-units --type=service --state=running
    ```
