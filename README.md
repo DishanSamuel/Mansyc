@@ -1,4 +1,4 @@
-# sysStart-quit
+# sysStart-Quit
 
 **sysStart-quit** is a Bash script designed to efficiently manage system services on Linux.  
 It allows users to **start essential services** listed in a configuration file and **terminate unnecessary services** by comparing running processes against a predefined list.  
