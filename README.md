@@ -15,12 +15,12 @@ In the future, **Golang** integration may be added to enhance performance and us
 
 ## Installation
 
-1. Clone the repository:
+**1. Clone the repository:**
    ```bash
    git clone https://github.com/DishanSamuel/sysStart-Quit.git
    cd sysStart-Quit
    ```
-2. Make the script executable & install requirements:
+**2. Make the script executable & install requirements:**
    ```bash
    chmod +x ./config.sh
    ./config.sh
@@ -28,7 +28,9 @@ In the future, **Golang** integration may be added to enhance performance and us
 
 ## Usage
 
-1. setting up the text file listing startup & essential services required:<br>
+**1. setting up the text file listing startup & essential services required:**
+<br>
+
    THERE ARE TWO .txt FILES <br>
    => normalser.txt (used in quiting services) <br>
    => startup.txt   (used in starting services) <br>
@@ -71,7 +73,7 @@ In the future, **Golang** integration may be added to enhance performance and us
    bluetooth.service
    ```
    
-3. Run the script to **start** essential services:
+**3. Run the script to start & end essential services:**
    ```bash
    ./run_main.sh
    ```
