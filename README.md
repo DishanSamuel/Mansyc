@@ -83,7 +83,8 @@ In the future, **Golang** integration may be added to enhance performance and us
    ```bash
    ./run_main.sh
    ```
-   ![image](https://github.com/user-attachments/assets/93b3a44c-5e2e-463f-a976-e8d0897e33ab)
+   ![image](https://github.com/user-attachments/assets/ef247bc0-999f-4f23-b8d8-68ff067316dc)
+
 
    PRESS "1" --> to start services <br>
    PRESS "2" --> end services
