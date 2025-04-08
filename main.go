@@ -67,13 +67,13 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			}
 		case "enter", " ":
 			if m.cursor == 0 {
-				out, err := ExecuteScript("startscript.sh")
+				out, err := ExecuteScript("start_main.sh")
 				if err != nil {
 					log.Fatal(err)
 				}
-				fmt.Println(out)
+				fmt.Print(out)
 			} else if m.cursor == 1 {
-				out, err := ExecuteScript("quitscript.sh")
+				out, err := ExecuteScript("quit_main.sh")
 				if err != nil {
 					log.Fatal(err)
 				}
@@ -88,13 +88,13 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m model) View() string {
-	s := "\n\n"
-	s += styleTrue.Render("Welcome to ManSyc")
+	// s := "\n\n"
+	// s += "Welcome to ManSyc"
+	// s += "\n\n"
+	// s += "Linux Process management tool.\n\n"
+	// s += "Bash Scripting by - Dishan S Samuel, CLI UI built by - Vincent Samuel Paul\n"
+	s := styleHeader.Render(styleTrue.Render("Welcome to ManSyc\n") + "\nA Linux Process management tool.\n\nBash Scripting by - Dishan S Samuel\nCLI UI built by - Vincent Samuel Paul\n\n© ManSyc v1 2025 All Rights Reserved\n")
 	s += "\n\n"
-	s += "Linux Process management tool.\n"
-	s += "Process Management Script by - Dishan S Samuel\nCLI tool built by - Vincent Samuel Paul\n"
-	s += styleHeader.Render(fmt.Sprint(s))
-	s += "\n"
 
 	for i, choice := range m.choices {
 		cursor := " "
