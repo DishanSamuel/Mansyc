@@ -67,17 +67,17 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			}
 		case "enter", " ":
 			if m.cursor == 0 {
-				out, err := ExecuteScript("startscript.sh")
+				out, err := ExecuteScript("start_main.sh")
 				if err != nil {
 					log.Fatal(err)
 				}
-				fmt.Println(out)
+				fmt.Print(out)
 			} else if m.cursor == 1 {
-				out, err := ExecuteScript("quitscript.sh")
+				out, err := ExecuteScript("quit_main.sh")
 				if err != nil {
 					log.Fatal(err)
 				}
-				fmt.Println(out)
+				fmt.Print(out)
 			} else if m.cursor == 2 {
 				return m, tea.Quit
 			}
