@@ -94,7 +94,7 @@ func (m model) View() string {
 	// s += "\n\n"
 	// s += "Linux Process management tool.\n\n"
 	// s += "Bash Scripting by - Dishan S Samuel, CLI UI built by - Vincent Samuel Paul\n"
-	s := styleHeader.Render(styleTrue.Render("Welcome to ManSyc\n") + "\nA Linux Process management tool.\n\nBash Scripting by -" + styleName.Render(" Dishan S Samuel") + "\nCLI UI built by -" + styleName.Render(" Vincent Samuel Paul") + "\nTech Stack: Bash, GOlang, BubbleTea\n\n© ManSyc v1 2025 All Rights Reserved\n")
+	s := styleHeader.Render(styleTrue.Render("Welcome to ManSyc\n") + "\nA Linux Process management tool.\n\nBash Scripting by -" + styleName.Render(" Dishan S Samuel") + "\nCLI UI built by -" + styleName.Render(" Vincent Samuel Paul") + "\nTech Stack: Bash, GOlang, BubbleTea, LipGloss\n\n© ManSyc v1 2025 All Rights Reserved\n")
 	s += "\n\n"
 
 	for i, choice := range m.choices {
