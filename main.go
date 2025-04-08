@@ -31,8 +31,15 @@ func ExecuteScript(fileName string) (string, error) {
 	}
 }
 
+type Styles struct {
+	BorderColor lipgloss.Color
+	InputrField lipgloss.Style
+}
+
 var styleTrue = lipgloss.NewStyle().Foreground(lipgloss.Color("36"))
 var styleFalse = lipgloss.NewStyle()
+var ss = new(Styles)
+var styleHeader = lipgloss.NewStyle().BorderForeground(ss.BorderColor).BorderStyle(lipgloss.NormalBorder()).Padding(1).Width(80)
 
 func initialModel() model {
 	return model{
@@ -81,7 +88,13 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m model) View() string {
-	s := "Welcome\n\n"
+	s := "\n\n"
+	s += styleTrue.Render("Welcome to ManSyc")
+	s += "\n\n"
+	s += "Linux Process management tool.\n"
+	s += "Process Management Script by - Dishan S Samuel\nCLI tool built by - Vincent Samuel Paul\n"
+	s += styleHeader.Render(fmt.Sprint(s))
+	s += "\n"
 
 	for i, choice := range m.choices {
 		cursor := " "
