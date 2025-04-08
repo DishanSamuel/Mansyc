@@ -17,4 +17,5 @@ else
     sudo systemctl stop "$word"
     echo "$word stopped"
   done < filter_user.txt
+  rm filter_user.txt | rm user_curser.txt
 fi
