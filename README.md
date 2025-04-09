@@ -41,18 +41,18 @@ There are two configuration .txt files:
 
 ### normalser.txt 📝
 
-   Contains essential services for the Linux system to operate.
-
-   This file may vary from system to system, so please review it before running ⚠️.
+   -Contains essential services for the Linux system to operate.<br>
+   -This file may vary from system to system, so please review it before running ⚠️.<br>
 
 ### startup.txt 📝
 
-   Contains the services that should be started during script execution.
+   -Contains the services that should be started during script execution.
 
-You can customize these files according to your needs.
-To know the default services on your system, run the following command:
+### You can customize these files according to your needs.
+   
+   To know the default services on your system, run the following command:
       
-      systemctl list-units --type=service --state=running
+    systemctl list-units --type=service --state=running
 
 ### Default services include:
 
@@ -79,7 +79,7 @@ To know the default services on your system, run the following command:
       bolt.service
       bluetooth.service
 
-## Run the script to start & end essential services:
+## Run the script to start or end essential services:
 
 ## Golang Integration 🖥️
 
