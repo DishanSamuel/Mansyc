@@ -1,10 +1,9 @@
-# sysStart-Quit 🚀
+# ManSyc 🚀
 
-**sysStart-Quit** is a **Bash script** designed to efficiently manage system services on Linux.  
-It helps users **start essential services** 🟢 listed in a configuration file and **terminate unnecessary services** 🔴 by comparing running processes against a predefined list.
+**ManSyc** is a **Go lang + Bash script** designed to efficiently manage system services on Linux.  
+It helps users **start essential services**  listed in a configuration file and **terminate unnecessary services** by comparing running processes against a predefined list.
 
-**Future Updates:**  
-Integration with **Golang** 🖥️ is planned to enhance performance and usability.
+**ManSyc - [A Linux Process Management Tool:**  
 
 ---
 
