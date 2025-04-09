@@ -3,7 +3,7 @@
 **ManSyc** is a **Go lang + Bash script** designed to efficiently manage system services on Linux.  
 It helps users **start essential services**  listed in a configuration file and **terminate unnecessary services** by comparing running processes against a predefined list.
 
-**ManSyc - [A Linux Process Management Tool:**  
+**ManSyc - [A Linux Process Management Tool]**  
 
 ---
 
